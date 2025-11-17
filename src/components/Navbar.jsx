@@ -3,12 +3,12 @@ import { Menu, Search, Home, Star } from "lucide-react";
 export default function Navbar() {
   return (
     <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[92%] md:w-[86%] lg:w-[80%]">
-      <div className="flex items-center justify-between rounded-3xl backdrop-blur-xl bg-white/5 border border-white/10 px-4 md:px-6 py-3 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.6)]">
+      <div className="flex items-center justify-between rounded-[22px] backdrop-blur-xl bg-white/5 border border-white/10 px-4 md:px-6 py-3 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.6)]">
         <div className="flex items-center gap-3 text-white/90">
-          <div className="size-9 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 shadow-[0_10px_20px_-5px_rgba(255,122,0,0.6)] flex items-center justify-center font-bold">A</div>
-          <span className="font-semibold tracking-wide">ArcForge Studio</span>
+          <div className="size-9 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 shadow-[0_10px_20px_-5px_rgba(255,122,0,0.6)] flex items-center justify-center font-semibold tracking-[-0.02em]">A</div>
+          <span className="font-semibold tracking-[-0.01em]">ArcForge Studio</span>
         </div>
-        <div className="hidden md:flex items-center gap-6 text-sm text-white/70">
+        <div className="hidden md:flex items-center gap-6 text-sm text-white/80">
           <a className="hover:text-white transition-colors inline-flex items-center gap-2" href="#"><Home size={16}/>Home</a>
           <a className="hover:text-white transition-colors" href="#projects">Projects</a>
           <a className="hover:text-white transition-colors" href="#solutions">Solutions</a>

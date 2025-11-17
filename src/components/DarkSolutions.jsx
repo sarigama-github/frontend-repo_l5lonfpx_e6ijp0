@@ -9,7 +9,7 @@ export default function DarkSolutions() {
             <span className="size-2 rounded-full bg-orange-500" />
             Design Solutions
           </div>
-          <h3 className="text-4xl md:text-5xl font-extrabold tracking-tight">Minimal. Precise. Adaptive.</h3>
+          <h3 className="text-4xl md:text-5xl font-semibold tracking-[-0.02em]">Minimal. Precise. Adaptive.</h3>
           <ul className="mt-6 space-y-3 text-white/80">
             {[
               "Parametric facades with thermal intelligence",
@@ -32,11 +32,11 @@ export default function DarkSolutions() {
           className="relative"
         >
           <img
-            src="https://images.unsplash.com/photo-1568819317551-31051b37f69a?q=80&w=2067&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1529235433435-4e85f7aa3e29?q=80&w=2400&auto=format&fit=crop"
             alt="glowing architecture"
-            className="rounded-3xl shadow-[0_40px_120px_-40px_rgba(255,122,0,0.6)]"
+            className="rounded-[22px] shadow-[0_40px_120px_-40px_rgba(255,122,0,0.6)]"
           />
-          <div className="absolute inset-0 rounded-3xl ring-1 ring-white/10" />
+          <div className="absolute inset-0 rounded-[22px] ring-1 ring-white/10" />
         </motion.div>
       </div>
     </section>

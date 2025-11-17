@@ -1,7 +1,8 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-const bgUrl = "https://images.unsplash.com/photo-1546182990-dffeafbe841d?q=80&w=2070&auto=format&fit=crop";
+// Curated luxury hero image with darker glass + warm accents
+const bgUrl = "https://images.unsplash.com/photo-1529429612779-c8e40ef2f36e?q=80&w=2400&auto=format&fit=crop";
 
 export default function Hero() {
   const sectionRef = useRef(null);
@@ -35,17 +36,17 @@ export default function Hero() {
       <motion.div
         aria-hidden
         style={{ y: fogY, willChange: "transform" }}
-        className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.04),transparent_60%)]"
+        className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,122,0,0.06),transparent_60%)]"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
 
-      {/* Huge background word with parallax */}
+      {/* Huge background word with parallax and luxury letterforms */}
       <motion.h1
         initial={{ y: 40, opacity: 0 }}
         animate={{ y: 0, opacity: 0.12 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
         style={{ y: titleY, willChange: "transform" }}
-        className="absolute bottom-8 left-6 md:left-12 text-[22vw] leading-none font-extrabold tracking-tighter text-white/10 select-none pointer-events-none"
+        className="absolute bottom-8 left-6 md:left-12 text-[22vw] leading-none font-semibold tracking-[-0.04em] text-white/10 select-none pointer-events-none"
       >
         ARCHI
       </motion.h1>
@@ -65,7 +66,7 @@ export default function Hero() {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="mt-6 text-white text-5xl md:text-7xl font-black tracking-tight"
+          className="mt-6 text-white text-5xl md:text-7xl font-semibold tracking-[-0.02em]"
         >
           Futuristic Architectural Experiences
         </motion.h2>
